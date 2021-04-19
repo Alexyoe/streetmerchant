@@ -11,6 +11,7 @@
     "pretest": "npm run compile",
     "posttest": "npm run lint",
     "prestart": "npm run compile",
+    "postinstall": "npm run compile",
     "start": "node build/src/index.js",
     "start:dev": "nodemon --config nodemon.json",
     "start:production": "node build/src/index.js",
