@@ -9,7 +9,7 @@ const link: Link = {
   model: 'test:model',
   price: 100,
   series: 'test:series',
-  url: 'https://www.example.com/url',
+  url: 'https://www.example.com/url?v=thisisanexampleofadiscordnotification',
 };
 
 const store: Store = {

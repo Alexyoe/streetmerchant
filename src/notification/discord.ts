@@ -25,13 +25,9 @@ export function sendDiscordMessage(link: Link, store: Store) {
     (async () => {
       try {
         const embed = new Discord.MessageEmbed()
-          .setTitle('_**Stock alert!**_')
-          .setDescription(
-            '> provided by @Yoedog with :heart:'
-          )
-          .setThumbnail(
-            'https://raw.githubusercontent.com/jef/streetmerchant/main/docs/assets/images/streetmerchant-logo.png'
-          )
+          .setTitle('**Stock alert!**')
+          .setDescription('> Report any issues to @Yoedog')
+          .setThumbnail('https://static.thenounproject.com/png/3339087-200.png')
           .setColor('#52b788')
           .setTimestamp();
 
@@ -69,7 +65,7 @@ export function sendDiscordMessage(link: Link, store: Store) {
               client
                 .send(notifyText.join(' '), {
                   embeds: [embed],
-                  username: 'streetmerchant',
+                  username: 'Stock Boy',
                 })
                 .then(resp => {
                   logger.info('✔ discord message sent resp.id: ' + resp.id);
